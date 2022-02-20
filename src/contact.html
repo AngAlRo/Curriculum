@@ -1,160 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Document</title>
-</head>
-<body>
-  <header>
-    <div class="d-flex justify-content-center mt-3 mb-4 bg-light">
-        <h1>Formulario de Contacto</h1>
-    </div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-5">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Contacto</title>
+  </head>
+  <body>
+    <header>
+      <div class="d-flex justify-content-center mt-3 bg-light">
+        <h1>Contacto</h1>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light mb-5">
         <div class="container-fluid">
-            <div class="container d-flex">
-                <a class="navbar-brand" href="#"><img src="img/APLogo.png" alt="Academia Postal"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Curriculum</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="blog.html">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>  
+          <div class="container d-sm-flex">
+            <a class="navbar-brand" href="#"
+              ><img src="img/APLogo.png" alt="Academia Postal"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav mx-sm-auto">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="index.html"
+                    >Curriculum</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </nav>
     </header>
-        
-  <main>
-            <div class="row g-5">             
-              <div class="col-md-7 col-lg-8">
-                <h4 class="mb-3">Datos contacto</h4>
-                <form class="needs-validation" novalidate>
-                  <div class="row g-3">
-                    <div class="col-sm-6">
-                      <label for="firstName" class="form-label">Nombre</label>
-                      <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
-                      <div class="invalid-feedback">
-                        Un nombre válido es requirido
-                      </div>
-                    </div>
-        
-                    <div class="col-sm-6">
-                      <label for="lastName" class="form-label">Apellido</label>
-                      <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
-                      <div class="invalid-feedback">
-                        Un apellido válido es requerido
-                      </div>
-                    </div>
-        
-                    <div class="col-12">
-                      <label for="username" class="form-label">Username</label>
-                      <div class="input-group has-validation">
-                        <span class="input-group-text">@</span>
-                        <input type="text" class="form-control" id="username" placeholder="Username" required>
-                      <div class="invalid-feedback">
-                          Es necesario su Username
-                        </div>
-                      </div>
-                    </div>
-        
-                    <div class="col-12">
-                      <label for="email" class="form-label">Email <span class="text-muted">(Opcional)</span></label>
-                      <input type="email" class="form-control" id="email" placeholder="Email@ejemplo.com">
-                      <div class="invalid-feedback">
-                        Por favor, introduzca un email valido.
-                      </div>
-                    </div>
-        
-                    <div class="col-12">
-                      <label for="address" class="form-label">Dirección</label>
-                      <input type="text" class="form-control" id="address" placeholder="calle Principal 24" required>
-                      <div class="invalid-feedback">
-                        Por favor, introduzca una dirección válida
-                      </div>
-                    </div>
-        
-                    <div class="col-12">
-                      <label for="address2" class="form-label">Dirección 2 <span class="text-muted">(Opcional)</span></label>
-                      <input type="text" class="form-control" id="address2" placeholder="Apartamento, casa....">
-                    </div>
-        
-                    <div class="col-md-5">
-                      <label for="country" class="form-label">Pais</label>
-                      <select class="form-select" id="country" required>
-                        <option value="">Seleccione...</option>
-                        <option>España</option>
-                        <option>Francia</option>
-                        <option>Alemania</option>
-                      </select>
-                      <div class="invalid-feedback">
-                        Por favor introduzca una ciudad.
-                      </div>
-                    </div>
-        
-                    <div class="col-md-4">
-                      <label for="state" class="form-label">Ciudad</label>
-                      <select class="form-select" id="state" required>
-                        <option value="">Seleccione...</option>
-                        <option>Coruña</option>
-                        <option>Madrid</option>
-                        <option>Alicante</option>
-                      </select>
-                      <div class="invalid-feedback">
-                        Please provide a valid state.
-                      </div>
-                    </div>
-        
-                    <div class="col-md-3">
-                      <label for="zip" class="form-label">Codigo Postal</label>
-                      <input type="text" class="form-control" id="zip" placeholder="" required>
-                      <div class="invalid-feedback">
-                        Por favor introduzca un codigo postal
-                      </div>
-                    </div>
-                  </div>
-        
-                  <hr class="my-4">
-        
-                  <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="same-address">
-                    <label class="form-check-label" for="same-address">Los datos son los mismos para el contacto</label>
-                  </div>
-        
-                  <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="save-info">
-                    <label class="form-check-label" for="save-info">Grabar estos datos</label>
-                  </div>
-        
-                  <hr class="my-4">
-                  <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
-                </form>
-              </div>
-            </div>
-  </main>
-        
-  <footer class="my-5 pt-5 text-muted text-center text-small">
-    <p class="mb-1">&copy; 2022–2022 Mi compañia</p>
-    <ul class="list-inline">
-      <li class="list-inline-item"><a href="#">Privacidad</a></li>
-      <li class="list-inline-item"><a href="#">Terminos</a></li>
-      <li class="list-inline-item"><a href="#">Ayuda</a></li>
-    </ul>
-  </footer>       
-</body>
-    
-  <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
+    <main>
+      <div class="container">
+        <div class="row g-5 d-flex justify-content-center">
+          <div class="col-md-7 col-lg-8">
+            <h4 class="mb-3">Datos contacto</h4>
+            <form class="needs-validation" novalidate>
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <label for="firstName" class="form-label">Nombre</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="firstName"
+                    placeholder=""
+                    value=""
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Un nombre válido es requirido
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <label for="lastName" class="form-label">Apellido</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="lastName"
+                    placeholder=""
+                    value=""
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Un apellido válido es requerido
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <label for="username" class="form-label">Username</label>
+                  <div class="input-group has-validation">
+                    <span class="input-group-text">@</span>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="username"
+                      placeholder="Username"
+                      required
+                    />
+                    <div class="invalid-feedback">Es necesario su Username</div>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <label for="email" class="form-label"
+                    >Email <span class="text-muted">(Opcional)</span></label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Email@ejemplo.com"
+                  />
+                  <div class="invalid-feedback">
+                    Por favor, introduzca un email valido.
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <label for="address" class="form-label">Dirección</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="address"
+                    placeholder="calle Principal 24"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Por favor, introduzca una dirección válida
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <label for="address2" class="form-label"
+                    >Dirección 2
+                    <span class="text-muted">(Opcional)</span></label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="address2"
+                    placeholder="Apartamento, casa...."
+                  />
+                </div>
+
+                <div class="col-md-5">
+                  <label for="country" class="form-label">Pais</label>
+                  <select class="form-select" id="country" required>
+                    <option value="">Seleccione...</option>
+                    <option>España</option>
+                    <option>Francia</option>
+                    <option>Alemania</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Por favor introduzca una ciudad.
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <label for="state" class="form-label">Ciudad</label>
+                  <select class="form-select" id="state" required>
+                    <option value="">Seleccione...</option>
+                    <option>Coruña</option>
+                    <option>Madrid</option>
+                    <option>Alicante</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please provide a valid state.
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <label for="zip" class="form-label">Codigo Postal</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="zip"
+                    placeholder=""
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Por favor introduzca un codigo postal
+                  </div>
+                </div>
+              </div>
+
+              <hr class="my-4" />
+
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="same-address"
+                />
+                <label class="form-check-label" for="same-address"
+                  >Los datos son los mismos para el contacto</label
+                >
+              </div>
+
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="save-info"
+                />
+                <label class="form-check-label" for="save-info"
+                  >Grabar estos datos</label
+                >
+              </div>
+
+              <hr class="my-4" />
+              <button class="w-100 btn btn-primary btn-lg" type="submit">
+                Enviar los datos
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+      <p class="mb-1">&copy; 2022–2022 Mi compañia</p>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="#">Privacidad</a></li>
+        <li class="list-inline-item"><a href="#">Terminos</a></li>
+        <li class="list-inline-item"><a href="#">Ayuda</a></li>
+      </ul>
+    </footer>
+  </body>
+
+  <script
+    src="/docs/5.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
 </html>
